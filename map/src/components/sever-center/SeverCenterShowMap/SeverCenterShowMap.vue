@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="show-map-wrapper">
     <iframe
       src="static/map.html"
       height="100%"
@@ -22,11 +22,12 @@ export default {
 };
 </script>
 <style  scoped lang='stylus' rel='sheetstyle/stylus'>
-.wrapper {
+.show-map-wrapper {
   box-sizing: border-box;
-  padding-top: 20px;
+  // padding-top: 20px;
   // display: block;
   display: flex;
+  width: 100%;
 
   .container {
     width: 100%;

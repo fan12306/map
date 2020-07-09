@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="sever-wrapper">
     <base-menu class="menu-container"></base-menu>
     <router-view></router-view>
   </div>
@@ -16,7 +16,8 @@ export default {
 <style  scoped lang='stylus' rel='sheetstyle/stylus'>
 @import '~common/stylus/variable.styl';
 
-.wrapper {
+.sever-wrapper {
+  // padding-top: 28px;
   width: 100%;
   height: 100%;
   display: flex;

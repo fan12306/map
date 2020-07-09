@@ -42,14 +42,13 @@ export default {
 @import '~common/stylus/variable.styl';
 
 .menu-container {
-  padding-top: 20px;
   width: 100px;
   height: 100%;
   background: $color-highlight-background;
   box-sizing: border-box;
 
   .tac {
-    width: 100%;
+    width: 100px;
     height: 100%;
     background: $color-highlight-background;
 

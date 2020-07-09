@@ -21,16 +21,18 @@
           <p>还原</p>
         </div>
       </div>
-      <div class="in-coder-panel">
-        <textarea ref="textarea"></textarea>
-        <el-select class="code-mode-select" v-model="mode" @change="changeMode">
-          <el-option
-            v-for="mode in modes"
-            :key="mode.value"
-            :label="mode.label"
-            :value="mode.value"
-          ></el-option>
-        </el-select>
+      <div class="code-container">
+        <div class="in-coder-panel">
+          <textarea ref="textarea"></textarea>
+          <el-select class="code-mode-select" v-model="mode" @change="changeMode">
+            <el-option
+              v-for="mode in modes"
+              :key="mode.value"
+              :label="mode.label"
+              :value="mode.value"
+            ></el-option>
+          </el-select>
+        </div>
       </div>
     </div>
   </div>
@@ -211,6 +213,9 @@ export default {
 
 .controls-wrapper {
   min-width: 200px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 
   .controls-container {
     padding-left: 10px;
@@ -258,27 +263,31 @@ export default {
     background: #eee;
   }
 
-  .in-coder-panel {
-    flex-grow: 1;
-    display: flex;
-    position: relative;
-  }
+  .code-container {
+    height: 100%;
 
-  .CodeMirror {
-    flex-grow: 1;
-    z-index: 1;
-
-    .CodeMirror-code {
-      line-height: 19px;
+    .in-coder-panel {
+      flex-grow: 1;
+      display: flex;
+      position: relative;
     }
-  }
 
-  .code-mode-select {
-    position: absolute;
-    z-index: 2;
-    right: 10px;
-    top: 10px;
-    max-width: 130px;
+    .CodeMirror {
+      flex-grow: 1;
+      z-index: 1;
+
+      .CodeMirror-code {
+        line-height: 19px;
+      }
+    }
+
+    .code-mode-select {
+      position: absolute;
+      z-index: 2;
+      right: 10px;
+      top: 10px;
+      max-width: 130px;
+    }
   }
 }
 </style>

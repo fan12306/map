@@ -37,11 +37,19 @@ export default {
 };
 </script>
 <style  scoped lang='stylus' rel='sheetstyle/stylus'>
-.nav {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 20;
-}
+
+// .nav {
+
+//   width: 100%;
+
+//   position: absolute;
+
+//   top: 0;
+
+//   left: 0;
+
+//   z-index: 20;
+
+// }
+
 </style>
